@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ناوبری Overlay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <header class="hero">
+            <h1>ناوبری Overlay</h1>
+            <p class="hero-subtitle">دو نوع ناوبری ساده با overlay</p>
+        </header>
+        
+        <div class="section">
+            <div class="card">
+                <h2>سرعت بالا</h2>
+                <p>دکمه اسکرول به بالا با عملکرد سریع و روان، تجربه کاربری بی‌نظیری ارائه می‌دهد.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="card">
+                <h2>طراحی زیبا</h2>
+                <p>طراحی مدرن و جذاب با انیمیشن‌های نرم و رنگ‌بندی چشم‌نواز.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="card">
+                <h2>سازگار با موبایل</h2>
+                <p>عملکرد عالی روی تمام دستگاه‌ها از جمله تلفن‌های همراه و تبلت‌ها.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="card">
+                <h2>جاوااسکریپت خام</h2>
+                <p>کد ساده و بهینه بدون وابستگی به کتابخانه‌های خارجی.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="card">
+                <h2>قابلیت تنظیم</h2>
+                <p>قابلیت شخصی‌سازی آسان برای استفاده در پروژه‌های مختلف.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- دکمه‌های ناوبری -->
+    <button id="leftNavBtn" class="nav-btn left-nav-btn">☰</button>
+    <button id="topNavBtn" class="nav-btn top-nav-btn">≡</button>
+    
+    <!-- Overlay سمت چپ -->
+    <div id="leftOverlay" class="overlay left-overlay">
+        <div class="overlay-content">
+            <button class="close-btn" id="closeLeftBtn">×</button>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">خانه</a>
+                <a href="#about" class="nav-link">درباره ما</a>
+                <a href="#services" class="nav-link">خدمات</a>
+                <a href="#contact" class="nav-link">تماس با ما</a>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Overlay تمام صفحه -->
+    <div id="topOverlay" class="overlay top-overlay">
+        <div class="overlay-content">
+            <button class="close-btn" id="closeTopBtn">×</button>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">خانه</a>
+                <a href="#about" class="nav-link">درباره ما</a>
+                <a href="#services" class="nav-link">خدمات</a>
+                <a href="#contact" class="nav-link">تماس با ما</a>
+                <a href="#portfolio" class="nav-link">نمونه کارها</a>
+                <a href="#blog" class="nav-link">وبلاگ</a>
+            </nav>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

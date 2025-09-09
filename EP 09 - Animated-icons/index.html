@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آیکون‌های انیمیشنی</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <header class="hero">
+            <h1>آیکون‌های انیمیشنی</h1>
+            <p class="hero-subtitle">چهار آیکون انیمیشنی ساده و کاربردی</p>
+        </header>
+        
+        <!-- بخش آیکون‌های انیمیشنی -->
+        <div class="section">
+            <div class="card">
+                <h2>آیکون‌های انیمیشنی</h2>
+                <p>چهار آیکون انیمیشنی ساده و کاربردی</p>
+                
+                <div class="animated-icons-container">
+                    <!-- باتری شارژ -->
+                    <div class="icon-wrapper">
+                        <h3>باتری شارژ</h3>
+                        <div class="battery-icon">
+                            <div class="battery-body">
+                                <div class="battery-fill" id="batteryFill"></div>
+                            </div>
+                            <div class="battery-tip"></div>
+                        </div>
+                        <button class="icon-btn" onclick="toggleBattery()">شروع/توقف</button>
+                    </div>
+                    
+                    <!-- ساعت شنی -->
+                    <div class="icon-wrapper">
+                        <h3>ساعت شنی</h3>
+                        <div class="hourglass-icon">
+                            <div class="hourglass-top">
+                                <div class="sand-top" id="sandTop"></div>
+                            </div>
+                            <div class="hourglass-middle"></div>
+                            <div class="hourglass-bottom">
+                                <div class="sand-bottom" id="sandBottom"></div>
+                            </div>
+                        </div>
+                        <button class="icon-btn" onclick="toggleHourglass()">شروع/توقف</button>
+                    </div>
+                    
+                    <!-- اسپینر لودینگ -->
+                    <div class="icon-wrapper">
+                        <h3>اسپینر لودینگ</h3>
+                        <div class="spinner-icon" id="spinnerIcon">
+                            <div class="spinner"></div>
+                        </div>
+                        <button class="icon-btn" onclick="toggleSpinner()">شروع/توقف</button>
+                    </div>
+                    
+                    <!-- نوار پیشرفت -->
+                    <div class="icon-wrapper">
+                        <h3>نوار پیشرفت</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <button class="icon-btn" onclick="toggleProgress()">شروع/توقف</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
