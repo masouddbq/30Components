@@ -1,0 +1,77 @@
+/* Custom Purple Scrollbar - Simple & Clean */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    min-height: 100vh;
+    direction: rtl;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #8a2be2, #9370db);
+    border-radius: 6px;
+    border: 1px solid rgba(138, 43, 226, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #7b1fa2, #8e24aa);
+}
+
+/* Content Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.demo-box {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+}
+
+.demo-box h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه‌بندی ساده</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>صفحه‌بندی ساده</h1>
+        
+        <!-- محتوای صفحه -->
+        <div class="content">
+            <div id="items-container">
+                <!-- آیتم‌ها اینجا نمایش داده می‌شوند -->
+            </div>
+        </div>
+        
+        <!-- دکمه‌های صفحه‌بندی -->
+        <div class="pagination">
+            <button id="prev-btn" onclick="previousPage()">قبلی</button>
+            <div id="page-numbers"></div>
+            <button id="next-btn" onclick="nextPage()">بعدی</button>
+        </div>
+        
+        <div class="info">
+            <p>صفحه <span id="current-page">1</span> از <span id="total-pages">1</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

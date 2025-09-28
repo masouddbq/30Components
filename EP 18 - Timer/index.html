@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تایمر کاهشی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="timer-container">
+            <div class="clock-circle">
+                <div class="time-display">
+                    <div class="time-section">
+                        <span id="hours">00</span>
+                        <label>ساعت</label>
+                    </div>
+                    <div class="time-section">
+                        <span id="minutes">00</span>
+                        <label>دقیقه</label>
+                    </div>
+                    <div class="time-section">
+                        <span id="seconds">00</span>
+                        <label>ثانیه</label>
+                    </div>
+                </div>
+                <div class="progress-ring">
+                    <svg class="progress-ring-svg" width="300" height="300">
+                        <circle class="progress-ring-circle-bg" cx="150" cy="150" r="140"></circle>
+                        <circle class="progress-ring-circle" cx="150" cy="150" r="140"></circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

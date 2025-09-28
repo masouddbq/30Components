@@ -1,0 +1,12 @@
+راهنمای 4 مرحله‌ای سفارشی‌سازی اسکرول بار
+
+مرحله ۱: با ::-webkit-scrollbar عرض اسکرول بار را تعیین کنید
+مرحله ۲: با ::-webkit-scrollbar-track زمینه اسکرول را رنگ‌آمیزی کنید  
+مرحله ۳: با ::-webkit-scrollbar-thumb دکمه اسکرول را بنفش کنید
+مرحله ۴: با ::-webkit-scrollbar-thumb:hover افکت هاور اضافه کنید
+
+JavaScript برای کنترل دینامیک:
+مرحله ۱: با createElement('style') استایل جدید بسازید
+مرحله ۲: با textContent کد CSS را وارد کنید
+مرحله ۳: با appendChild به head اضافه کنید
+مرحله ۴: با removeChild استایل را حذف کنید

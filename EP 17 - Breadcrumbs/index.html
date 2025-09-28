@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Breadcrumbs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Breadcrumbs Example</h1>
+        
+        <!-- Breadcrumbs Container -->
+        <nav class="breadcrumbs" id="breadcrumbs">
+            <a href="#" onclick="navigateTo('home')">Home</a>
+            <span class="separator">></span>
+            <a href="#" onclick="navigateTo('products')">Products</a>
+            <span class="separator">></span>
+            <span class="current">Laptops</span>
+        </nav>
+        
+        <!-- Content Area -->
+        <div class="content">
+            <h2 id="page-title">Laptops</h2>
+            <p id="page-content">You are currently viewing the Laptops page.</p>
+        </div>
+        
+        <!-- Navigation Buttons for Demo -->
+        <div class="demo-buttons">
+            <button onclick="navigateTo('home')">Go to Home</button>
+            <button onclick="navigateTo('products')">Go to Products</button>
+            <button onclick="navigateTo('laptops')">Go to Laptops</button>
+            <button onclick="navigateTo('gaming-laptops')">Go to Gaming Laptops</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

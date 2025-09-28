@@ -1,0 +1,109 @@
+/* Simple and Clean Breadcrumbs CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Breadcrumbs Styles */
+.breadcrumbs {
+    background-color: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.breadcrumbs a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.breadcrumbs .separator {
+    margin: 0 8px;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.breadcrumbs .current {
+    color: black;
+    font-weight: 500;
+}
+
+/* Content Area */
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Demo Buttons */
+.demo-buttons {
+    text-align: center;
+}
+
+.demo-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.demo-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.demo-buttons button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .breadcrumbs {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+    
+    .demo-buttons button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+}

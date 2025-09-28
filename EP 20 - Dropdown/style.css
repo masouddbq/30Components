@@ -1,0 +1,222 @@
+/* تنظیمات کلی */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', 'Tahoma', 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* نوبار */
+.navbar {
+    background-color: #333;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+/* فلش برای آیتم‌های دراپ داون */
+.dropdown .nav-link .arrow {
+    font-size: 12px;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .nav-link .arrow {
+    transform: rotate(180deg);
+}
+
+/* دراپ داون */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1001;
+    top: 100%;
+    right: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+/* محتوای اصلی */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.container p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.demo-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: right;
+    margin-top: 30px;
+}
+
+.demo-info h3 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.demo-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.demo-info li {
+    color: #000;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-right: 20px;
+}
+
+.demo-info li:last-child {
+    border-bottom: none;
+}
+
+.demo-info li::before {
+    content: "✓";
+    color: #28a745;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+
+/* طراحی واکنش‌گرا */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-menu {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .nav-item {
+        width: 100%;
+    }
+    
+    .nav-link {
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+    
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #444;
+    }
+    
+    .dropdown-content a {
+        color: #fff;
+        border-bottom: 1px solid #666;
+        padding-right: 30px;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #555;
+    }
+    
+    .container {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+    
+    .demo-info {
+        padding: 20px;
+    }
+}
