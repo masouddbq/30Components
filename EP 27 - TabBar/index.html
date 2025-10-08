@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tab-bar">
+            <button class="tab active" data-tab="tab1">تب اول</button>
+            <button class="tab" data-tab="tab2">تب دوم</button>
+            <button class="tab" data-tab="tab3">تب سوم</button>
+            <button class="tab" data-tab="tab4">تب چهارم</button>
+            <div class="indicator"></div>
+        </div>
+
+        <div class="content-container">
+            <div class="content active" id="tab1">
+                <h2>محتوای تب اول</h2>
+                <p>این محتوای تب اول است. با کلیک روی تب‌های دیگر، محتوا تغییر می‌کند.</p>
+            </div>
+            <div class="content" id="tab2">
+                <h2>محتوای تب دوم</h2>
+                <p>اینجا تب دوم است. انیمیشن‌ها به صورت نرم اجرا می‌شوند.</p>
+            </div>
+            <div class="content" id="tab3">
+                <h2>محتوای تب سوم</h2>
+                <p>محتوای تب سوم با افکت‌های جذاب نمایش داده می‌شود.</p>
+            </div>
+            <div class="content" id="tab4">
+                <h2>محتوای تب چهارم</h2>
+                <p>آخرین تب با انیمیشن پازلی زیبا.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

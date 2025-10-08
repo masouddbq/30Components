@@ -1,0 +1,154 @@
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5dc 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.tab-bar {
+    background: white;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    position: relative;
+    padding: 0;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}
+
+.tab {
+    flex: 1;
+    padding: 18px 20px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Vazirmatn', sans-serif;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.tab:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.tab.active {
+    color: #000;
+    font-weight: 700;
+    animation: popOut 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes popOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15) translateY(-5px);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.indicator {
+    position: absolute;
+    bottom: -2px;
+    height: 4px;
+    background: #000;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+    border-radius: 2px 2px 0 0;
+}
+
+.content-container {
+    background: white;
+    border-radius: 0 0 12px 12px;
+    padding: 40px;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    display: none;
+    animation: slideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content.active {
+    display: block;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.content h2 {
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 28px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.content p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .tab {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+    
+    .content-container {
+        padding: 25px;
+    }
+    
+    .content h2 {
+        font-size: 22px;
+    }
+    
+    .content p {
+        font-size: 14px;
+    }
+}
+
