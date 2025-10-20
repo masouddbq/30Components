@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoComplete - جستجوی هوشمند</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>جستجوی هوشمند</h1>
+        <p class="description">شروع به تایپ کنید تا نتایج را ببینید</p>
+        
+        <div class="autocomplete-wrapper">
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="جستجو کنید..."
+                autocomplete="off"
+            >
+            <ul id="suggestionsList" class="suggestions-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
